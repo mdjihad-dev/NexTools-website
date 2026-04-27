@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Card = ({ data, choose, setChoose }) => {
+const Card = ({ data, choose, setChoose, itemNumber, setItemNumber }) => {
   const {
     productName,
     badge,
@@ -9,15 +9,20 @@ const Card = ({ data, choose, setChoose }) => {
     priceText,
     features,
     img,
+    price,
+    id,
     buttonText,
   } = data;
 
   const [selected, setSelected] = useState(false);
 
   const handlerClick = () => {
+    const newData = itemNumber + 1;
+    setItemNumber(newData)
 
-    setSelected(true)
+    setSelected(true);
     setChoose([...choose, data]);
+  
   };
 
   return (
@@ -59,8 +64,15 @@ const Card = ({ data, choose, setChoose }) => {
         </ul>
 
         <div className="mt-6">
-          <button onClick={handlerClick} className={`btn ${selected ? 'bg-green-600 text-white' : ''}`}>
-            {buttonText}
+          <button
+            onClick={handlerClick}
+            className={`btn ${
+              selected
+                ? "w-full bg-green-600 text-white rounded-3xl"
+                : "w-full bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-3xl" 
+            }`}
+          >
+            {selected ? "Selected" : "Select"}
           </button>
         </div>
       </div>

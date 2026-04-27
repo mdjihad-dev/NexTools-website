@@ -1,4 +1,4 @@
-import { Suspense } from "react";
+import { Suspense, useState } from "react";
 import Footer from "./Component/Footer/Footer";
 import GetStarted from "./Component/GetStarted/GetStarted";
 import Hero from "./Component/Hero/Hero";
@@ -13,20 +13,26 @@ const fetchData = async() => {
   return res;
 } 
 
+
 function App() {
+  
+  const [itemNumber, setItemNumber] = useState(0)
   const cardData = fetchData();
 
   return (
     <>
-      <Navbar />
+      <Navbar itemNumber={itemNumber} />
       <main>
         {/* <Hero /> */}
         {/* <Rating /> */}
         {
-          <Suspense
-            fallback="Lodding...">
-              <Products cardData={cardData}></Products>
-            </Suspense>
+          <Suspense fallback="Lodding...">
+            <Products
+              cardData={cardData}
+              itemNumber={itemNumber}
+              setItemNumber={setItemNumber}
+            ></Products>
+          </Suspense>
         }
         <GetStarted />
         <PricingCard />
