@@ -9,9 +9,8 @@ import WorkFlow from "./Component/WorkFlow/WorkFlow";
 import Products from "./Component/Products/Products";
 
 const fetchData = async() => {
-  const res = await fetch('card.json').then(res.json());
+  const res = await fetch('card.json').then(res => res.json());
   return res;
-
 } 
 
 function App() {
@@ -20,17 +19,19 @@ function App() {
   return (
     <>
       <Navbar />
-      <Hero />
-      <Rating />
-      {
-        <Suspense
-          fallback="Lodding...">
-            <Products cardData={cardData}></Products>
-          </Suspense>
-      }
-      <GetStarted />
-      <PricingCard />
-      <WorkFlow />
+      <main>
+        {/* <Hero /> */}
+        {/* <Rating /> */}
+        {
+          <Suspense
+            fallback="Lodding...">
+              <Products cardData={cardData}></Products>
+            </Suspense>
+        }
+        <GetStarted />
+        <PricingCard />
+        <WorkFlow />
+      </main>
       <Footer />
     </>
   );

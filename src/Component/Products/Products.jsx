@@ -1,8 +1,17 @@
 
+import { use, useState } from 'react';
 import Card from '../Card/Card';
+import Selected from '../SelectedCard/Selected';
+
 
 const Products = ({cardData}) => {
 
+  const [tab, setTab] = useState('Products')
+
+    const useData = use(cardData)
+
+    const [choose, setChoose] = useState([])
+   
     return (
       <div className="max-w-7xl mx-auto my-16">
         <div className="text-center space-y-4">
@@ -13,22 +22,31 @@ const Products = ({cardData}) => {
             Choose from our curated collection of premium digital products
             designedto boost your productivity and creativity.
           </p>
-          <div role="tablist" className="">
-            <a
-              role="tab"
-              className="tab tab-active bg-linear-to-r from-[#4F39F6] to-[#9514FA] btn text-white rounded-3xl"
+          <div className="space-x-6">
+            <button
+              onClick={() => setTab("Products")}
+              className={`${tab === "Products" ? "bg-linear-to-r from-[#4F39F6] to-[#9514FA] btn text-white rounded-3xl" : ""}`}
             >
               Products
-            </a>
-            <a role="tab" className="tab">
+            </button>
+
+            <button
+              onClick={() => setTab("Card")}
+              className={`${tab === "Card" ? "bg-linear-to-r from-[#4F39F6] to-[#9514FA] btn text-white rounded-3xl" : ""}`}
+            >
               Cart(0)
-            </a>
-
-            {
-                cardData.map(data => <Card data={data}></Card>)
-            }
-
+            </button>
           </div>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-y-10 my-10">
+          {tab === "Products" ? (
+            useData.map((data) => (
+              <Card data={data} choose={choose} setChoose={setChoose}></Card>
+            ))
+          ) : (
+            <Selected choose={choose} setChoose={setChoose}></Selected>
+          )}
         </div>
       </div>
     );

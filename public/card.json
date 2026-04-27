@@ -1,50 +1,102 @@
 [
   {
     "id": 1,
-    "status": "Popular",
-    "title": "Automation Toolkit",
-    "description": "Automate repetitive tasks and streamline your workflow with powerful tools.",
-    "price": 79,
-    "features": ["50+ automations", "API access", "Custom workflows"]
+    "productName": "AI Writing Pro",
+    "badge": "Best Seller",
+    "icon": "document-with-pen",
+    "description": "Generate high-quality content, blogs, and marketing copy in seconds with advanced AI.",
+    "price": 29,
+    "period": "Mo",
+    "priceText": "$29",
+    "features": [
+      "Unlimited AI generations",
+      "50+ writing templates",
+      "Grammar checker"
+    ],
+    "buttonText": "Buy Now",
+    "buttonColor": "purple",
+    "img": "/src/assets/Image/writing_2327400 1.png"
   },
   {
     "id": 2,
-    "status": "New",
-    "title": "Data Analyzer Pro",
-    "description": "Get deep insights into your business metrics with AI-driven analytics.",
-    "price": 49,
-    "features": ["Real-time tracking", "Visual reports", "Export to PDF"]
+    "productName": "AI Content Master",
+    "badge": "Popular",
+    "icon": "content-icon",
+    "description": "Create engaging articles, social media posts, and SEO content instantly.",
+    "price": 39,
+    "period": "Mo",
+    "priceText": "$39",
+    "features": [
+      "Unlimited generations",
+      "SEO optimization",
+      "Plagiarism checker"
+    ],
+    "buttonText": "Buy Now",
+    "buttonColor": "purple",
+    "img": "/src/assets/Image/portfolio.png"
   },
   {
     "id": 3,
-    "status": "Best Value",
-    "title": "Cloud Storage Plus",
-    "description": "Securely store and share your large files with high-speed accessibility.",
-    "price": 29,
-    "features": ["1TB Storage", "End-to-end encryption", "Multi-device sync"]
+    "productName": "Blog Writer AI",
+    "badge": "Top Seller",
+    "icon": "blog-icon",
+    "description": "Turn ideas into professional blog posts in minutes with smart AI.",
+    "price": 19,
+    "period": "Mo",
+    "priceText": "$19",
+    "features": ["100+ blog templates", "Tone adjustment", "Image suggestions"],
+    "buttonText": "Buy Now",
+    "buttonColor": "purple",
+    "img": "/src//assets/Image/operation.png"
   },
   {
     "id": 4,
-    "status": null,
-    "title": "Marketing Suite",
-    "description": "All-in-one marketing tools to reach your customers more effectively.",
-    "price": 99,
-    "features": ["Email automation", "Social media scheduler", "Lead magnets"]
+    "productName": "Marketing Copy Pro",
+    "badge": "Best Seller",
+    "icon": "marketing-icon",
+    "description": "Write persuasive ads, emails, and landing pages that convert.",
+    "price": 49,
+    "period": "One Time",
+    "priceText": "$49",
+    "features": ["A/B testing ideas", "Email sequences", "Conversion focus"],
+    "buttonText": "Buy Now",
+    "buttonColor": "purple",
+    "img": "/src/assets/Image/design-tool.png"
   },
   {
     "id": 5,
-    "status": "Trending",
-    "title": "Security Shield",
-    "description": "Advanced protection for your digital assets and online presence.",
-    "price": 59,
-    "features": ["Malware scanning", "VPN access", "Identity protection"]
+    "productName": "AI Storyteller",
+    "badge": "New",
+    "icon": "story-icon",
+    "description": "Generate creative stories, scripts, and fictional content effortlessly.",
+    "price": 25,
+    "period": "Mo",
+    "priceText": "$25",
+    "features": [
+      "Creative writing modes",
+      "Character builder",
+      "Plot generator"
+    ],
+    "buttonText": "Buy Now",
+    "buttonColor": "purple",
+    "img": "/src/assets/Image/portfolio.png"
   },
   {
     "id": 6,
-    "status": null,
-    "title": "SEO Booster",
-    "description": "Optimize your website to rank higher on search engine results.",
-    "price": 39,
-    "features": ["Keyword research", "Backlink audit", "Competitor analysis"]
+    "productName": "Ultimate AI Writer",
+    "badge": "Premium",
+    "icon": "premium-icon",
+    "description": "All-in-one AI writing solution with advanced features for professionals.",
+    "price": 59,
+    "period": "Mo",
+    "priceText": "$59",
+    "features": [
+      "Everything unlimited",
+      "Team collaboration",
+      "Priority support"
+    ],
+    "buttonText": "Buy Now",
+    "buttonColor": "purple",
+    "img": "/src/assets/Image/operation.png"
   }
 ]
