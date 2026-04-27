@@ -1,10 +1,37 @@
-import Navbar from "./Component/Navbar";
+import { Suspense } from "react";
+import Footer from "./Component/Footer/Footer";
+import GetStarted from "./Component/GetStarted/GetStarted";
+import Hero from "./Component/Hero/Hero";
+import Navbar from "./Component/Navbar/Navbar";
+import PricingCard from "./Component/PricingCard/PricingCard";
+import Rating from "./Component/Rating/Rating";
+import WorkFlow from "./Component/WorkFlow/WorkFlow";
+import Products from "./Component/Products/Products";
+
+const fetchData = async() => {
+  const res = await fetch('card.json').then(res.json());
+  return res;
+
+} 
 
 function App() {
+  const cardData = fetchData();
 
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar />
+      <Hero />
+      <Rating />
+      {
+        <Suspense
+          fallback="Lodding...">
+            <Products cardData={cardData}></Products>
+          </Suspense>
+      }
+      <GetStarted />
+      <PricingCard />
+      <WorkFlow />
+      <Footer />
     </>
   );
 }

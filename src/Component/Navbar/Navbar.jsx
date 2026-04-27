@@ -1,5 +1,5 @@
 
-import Digitools from '../assets/Image/design-tools.png'
+import Digitools from '../../assets/Image/design-tools.png'
 import { IoCartOutline } from 'react-icons/io5';
 
 const Navbar = () => {

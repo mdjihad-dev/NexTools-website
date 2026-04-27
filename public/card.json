@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "status": "Popular",
+    "title": "Automation Toolkit",
+    "description": "Automate repetitive tasks and streamline your workflow with powerful tools.",
+    "price": 79,
+    "features": ["50+ automations", "API access", "Custom workflows"]
+  },
+  {
+    "id": 2,
+    "status": "New",
+    "title": "Data Analyzer Pro",
+    "description": "Get deep insights into your business metrics with AI-driven analytics.",
+    "price": 49,
+    "features": ["Real-time tracking", "Visual reports", "Export to PDF"]
+  },
+  {
+    "id": 3,
+    "status": "Best Value",
+    "title": "Cloud Storage Plus",
+    "description": "Securely store and share your large files with high-speed accessibility.",
+    "price": 29,
+    "features": ["1TB Storage", "End-to-end encryption", "Multi-device sync"]
+  },
+  {
+    "id": 4,
+    "status": null,
+    "title": "Marketing Suite",
+    "description": "All-in-one marketing tools to reach your customers more effectively.",
+    "price": 99,
+    "features": ["Email automation", "Social media scheduler", "Lead magnets"]
+  },
+  {
+    "id": 5,
+    "status": "Trending",
+    "title": "Security Shield",
+    "description": "Advanced protection for your digital assets and online presence.",
+    "price": 59,
+    "features": ["Malware scanning", "VPN access", "Identity protection"]
+  },
+  {
+    "id": 6,
+    "status": null,
+    "title": "SEO Booster",
+    "description": "Optimize your website to rank higher on search engine results.",
+    "price": 39,
+    "features": ["Keyword research", "Backlink audit", "Competitor analysis"]
+  }
+]
