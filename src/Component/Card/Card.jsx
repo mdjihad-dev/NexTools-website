@@ -80,10 +80,10 @@ const Card = ({ data, choose, setChoose, itemNumber, setItemNumber }) => {
             className={`btn ${
               selected
                 ? "w-full bg-green-600 text-white rounded-3xl"
-                : "w-full bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-3xl" 
+                : "w-full bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-3xl"
             }`}
           >
-            {selected ? "Selected" : "Select"}
+            {selected ? "✓ Added to Cart" : "Buy Now"}
           </button>
         </div>
       </div>
