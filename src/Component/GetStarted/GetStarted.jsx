@@ -1,7 +1,4 @@
 
-import user from '../../assets/Image/user.png'
-import PackageImage from '../../assets/Image/package.png'
-import Roketimage from '../../assets/Image/rocket.png'
 
 const GetStarted = () => {
     return (
@@ -27,7 +24,7 @@ const GetStarted = () => {
               {/* Image */}
               <div className="w-20 h-20 rounded-full bg-gray-100 flex items-center justify-center overflow-hidden">
                 <img
-                  src={user}
+                  src="/assets/user.png"
                   alt="user"
                   className="w-11 h-full object-contain"
                 />
@@ -49,7 +46,7 @@ const GetStarted = () => {
               {/* Image wrapper */}
               <div className="w-20 h-20 rounded-full bg-gray-100 flex items-center justify-center overflow-hidden">
                 <img
-                  src={PackageImage}
+                  src="/assets/package.png"
                   alt="user"
                   className="w-11 h-full object-contain"
                 />
@@ -72,7 +69,7 @@ const GetStarted = () => {
               {/* Image wrapper */}
               <div className="w-20 h-20 rounded-full bg-gray-100 flex items-center justify-center overflow-hidden">
                 <img
-                  src={Roketimage}
+                  src="/assets/rocket.png"
                   alt="user"
                   className="w-11 h-full object-contain"
                 />

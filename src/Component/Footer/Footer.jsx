@@ -1,10 +1,14 @@
-import digitools from '../../assets/Image/design-tools.png'
+
 const Footer = () => {
     return (
       <footer className="text-white bg-black">
         <div className="max-w-7xl mx-auto footer sm:footer-horizontal text-base px-10 py-16">
           <aside>
-            <img className="mt-3" src={digitools} alt="digitools image" />
+            <img
+              className="mt-3"
+              src="/assets/design-tools.png"
+              alt="digitools image"
+            />
             <p>
               ACME Industries Ltd.
               <br />
@@ -66,7 +70,7 @@ const Footer = () => {
         </div>
         <hr />
 
-        <aside className='text-center py-6'>
+        <aside className="text-center py-6">
           <p className="text-white">
             Copyright © {new Date().getFullYear()} - All right reserved by ACME
             Industries Ltd

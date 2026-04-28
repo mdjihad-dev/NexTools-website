@@ -18,22 +18,17 @@ const Card = ({ data, choose, setChoose, itemNumber, setItemNumber }) => {
   const [selected, setSelected] = useState(false);
 
   const handlerClick = () => {
-
-    if(choose.some(item => item.id === id)){
-      toast.error(`${productName} is already in your cart!`)
-      return
+    if (choose?.some((item) => item.id === id)) {
+      toast.error(`${productName} is already in your cart!`);
+      return;
     }
 
-    const newData = itemNumber + 1;
-    setItemNumber(newData)
-
-    if(newData )
+    setItemNumber((prev) => prev + 1);
 
     setSelected(true);
-    setChoose([...choose, data]);
+    setChoose((prev) => [...prev, data]);
 
     toast.success(`${productName} has been added to your cart successfully!`);
-  
   };
 
   return (

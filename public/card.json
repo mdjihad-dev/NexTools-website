@@ -15,7 +15,7 @@
     ],
     "buttonText": "Buy Now",
     "buttonColor": "purple",
-    "img": "/src/assets/Image/writing_2327400 1.png"
+    "img": "/assets/writing_2327400 1.png"
   },
   {
     "id": 2,
@@ -33,7 +33,7 @@
     ],
     "buttonText": "Buy Now",
     "buttonColor": "purple",
-    "img": "/src/assets/Image/portfolio.png"
+    "img": "/assets/portfolio.png"
   },
   {
     "id": 3,
@@ -47,7 +47,7 @@
     "features": ["100+ blog templates", "Tone adjustment", "Image suggestions"],
     "buttonText": "Buy Now",
     "buttonColor": "purple",
-    "img": "/src//assets/Image/operation.png"
+    "img": "/assets/operation.png"
   },
   {
     "id": 4,
@@ -61,7 +61,7 @@
     "features": ["A/B testing ideas", "Email sequences", "Conversion focus"],
     "buttonText": "Buy Now",
     "buttonColor": "purple",
-    "img": "/src/assets/Image/design-tool.png"
+    "img": "/assets/design-tool.png"
   },
   {
     "id": 5,
@@ -79,7 +79,7 @@
     ],
     "buttonText": "Buy Now",
     "buttonColor": "purple",
-    "img": "/src/assets/Image/portfolio.png"
+    "img": "/assets/portfolio.png"
   },
   {
     "id": 6,
@@ -97,6 +97,6 @@
     ],
     "buttonText": "Buy Now",
     "buttonColor": "purple",
-    "img": "/src/assets/Image/operation.png"
+    "img": "/assets/operation.png"
   }
 ]

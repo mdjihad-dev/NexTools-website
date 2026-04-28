@@ -1,7 +1,4 @@
 
-import BannerImage from '../../assets/Image/banner.png'
-import Rectangle from '../../assets/Image/Rectangle.png'
-import PlayIcon from '../../assets/Image/Play.png'
 const Hero = () => {
     return (
       <div className="hero min-h-screen bg-base-100">
@@ -9,7 +6,7 @@ const Hero = () => {
           {/* RIGHT IMAGE */}
           <div className="flex-1 flex justify-center">
             <img
-              src={BannerImage}
+              src="assets/banner.png"
               className="w-full max-w-md object-cover"
               alt="Banner"
             />
@@ -18,7 +15,7 @@ const Hero = () => {
           {/* LEFT CONTENT */}
           <div className="flex-1 max-w-2xl">
             <p className="bg-[#E1E7FF] px-4 py-2 rounded-full inline-flex items-center gap-2">
-              <img src={Rectangle} className="w-4 h-4" alt="" />
+              <img src="/assets/Rectangle.png" className="w-4 h-4" alt="" />
               New: AI-Powered Tools Available
             </p>
 
@@ -38,7 +35,7 @@ const Hero = () => {
               </button>
 
               <button className="btn border rounded-full bg-transparent flex items-center gap-2">
-                <img src={PlayIcon} className="w-4" alt="" />
+                <img src="/Play.png" className="w-4" alt="" />
                 Watch Demo
               </button>
             </div>

@@ -1,15 +1,18 @@
-import Digitools from "../../assets/Image/design-tools.png";
 import { IoCartOutline } from "react-icons/io5";
 import { useState } from "react";
 
 const Navbar = ({ choose }) => {
-  const [open, setOpen] = useState(false); // ✅ toggle state
+  const [open, setOpen] = useState(false);
 
   return (
     <div className="my-5 px-4">
       <div className="flex justify-between items-center bg-base-100 shadow-sm max-w-7xl mx-auto py-3 px-4 rounded-xl">
         {/* Logo */}
-        <img className="w-32" src={Digitools} alt="digitools image" />
+        <img
+          className="w-32"
+          src="/assets/design-tools.png"
+          alt="digitools image"
+        />
 
         {/* Desktop Menu */}
         <ul className="hidden lg:flex items-center gap-5">
