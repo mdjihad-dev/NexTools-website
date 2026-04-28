@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { toast } from "react-toastify";
 
 const Card = ({ data, choose, setChoose, itemNumber, setItemNumber }) => {
   const {
@@ -17,11 +18,21 @@ const Card = ({ data, choose, setChoose, itemNumber, setItemNumber }) => {
   const [selected, setSelected] = useState(false);
 
   const handlerClick = () => {
+
+    if(choose.some(item => item.id === id)){
+      toast.error(`${productName} is already in your cart!`)
+      return
+    }
+
     const newData = itemNumber + 1;
     setItemNumber(newData)
 
+    if(newData )
+
     setSelected(true);
     setChoose([...choose, data]);
+
+    toast.success(`${productName} has been added to your cart successfully!`);
   
   };
 

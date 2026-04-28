@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaFile } from 'react-icons/fa';
+import { toast } from 'react-toastify';
 
 
 const Selected = ({choose, setChoose}) => {
@@ -7,10 +8,17 @@ const Selected = ({choose, setChoose}) => {
     const totalPrice = choose.reduce((sum, item) => sum + item.price, 0)
 
     const handleDelet = (card) => {
+
+      if (!window.confirm(`Are you sure you want to remove ${card.productName}?`)) {
+        return;
+      }
+
         const fiterCard = choose.filter(CardItem => (
             CardItem.id !== card.id
         ))
         setChoose(fiterCard);
+
+        toast.error(`${card.productName} has been removed from your cart`);
     }
 
     const handleCheckout = () => {
