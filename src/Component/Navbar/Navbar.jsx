@@ -2,7 +2,7 @@
 import Digitools from '../../assets/Image/design-tools.png'
 import { IoCartOutline } from 'react-icons/io5';
 
-const Navbar = ({ itemNumber }) => {
+const Navbar = ({ choose }) => {
   return (
     <div className="my-5 flex justify-between items-center px-6 bg-base-100 shadow-sm max-w-7xl mx-auto">
       <div className="">
@@ -33,10 +33,18 @@ const Navbar = ({ itemNumber }) => {
           </li>
         </ul>
       </div>
+
       <div className="flex items-center gap-3.5">
-        <div className="flex">
-          <IoCartOutline className="w-6 h-auto" />
-          <p className='-mt-3'>{itemNumber}</p>
+        // Navbar-এ এভাবে রাখো
+        <div className="flex items-center gap-2 relative">
+          <IoCartOutline className="w-7 h-7 text-gray-700" />
+
+          {/* Badge / Count */}
+          {choose.length > 0 && (
+            <div className="absolute -top-1.5 -right-1.5 bg-red-500 text-white text-[10px] font-bold w-5 h-5 flex items-center justify-center rounded-full shadow">
+              {choose.length}
+            </div>
+          )}
         </div>
         <button className="btn">Login</button>
         <button className="btn bg-linear-to-r bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-3xl">

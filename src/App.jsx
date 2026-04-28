@@ -18,9 +18,12 @@ function App() {
   const [itemNumber, setItemNumber] = useState(0);
   const cardData = fetchData();
 
+
+   const [choose, setChoose] = useState([]);
+
   return (
     <>
-      <Navbar itemNumber={itemNumber} />
+      <Navbar itemNumber={itemNumber} choose={choose} />
       <main>
         {/* <Hero /> */}
         {/* <Rating /> */}
@@ -30,6 +33,8 @@ function App() {
               cardData={cardData}
               itemNumber={itemNumber}
               setItemNumber={setItemNumber}
+              choose={choose}
+              setChoose={setChoose}
             ></Products>
           </Suspense>
         }

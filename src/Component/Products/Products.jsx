@@ -4,12 +4,10 @@ import Card from '../Card/Card';
 import Selected from '../SelectedCard/Selected';
 
 
-const Products = ({ cardData, itemNumber, setItemNumber }) => {
+const Products = ({ cardData, itemNumber, setItemNumber, choose, setChoose }) => {
   const [tab, setTab] = useState("Products");
 
   const useData = use(cardData);
-
-  const [choose, setChoose] = useState([]);
 
   return (
     <div className="max-w-7xl mx-auto my-16">
