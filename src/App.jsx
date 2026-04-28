@@ -25,8 +25,8 @@ function App() {
     <>
       <Navbar itemNumber={itemNumber} choose={choose} />
       <main>
-        {/* <Hero /> */}
-        {/* <Rating /> */}
+        <Hero />
+        <Rating />
         {
           <Suspense fallback="Lodding...">
             <Products

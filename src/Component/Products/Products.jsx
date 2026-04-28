@@ -10,26 +10,26 @@ const Products = ({ cardData, itemNumber, setItemNumber, choose, setChoose }) =>
   const useData = use(cardData);
 
   return (
-    <div className="max-w-7xl mx-auto my-16">
+    <div className="max-w-7xl mx-auto my-20">
       <div className="text-center space-y-4">
         <h2 className="text-4xl text-[#101727] font-bold">
           Premium Digital Tools
         </h2>
-        <p className="text-[#627382] text-basef font-semibold">
+        <p className="text-[#627382] text-base">
           Choose from our curated collection of premium digital products
           designedto boost your productivity and creativity.
         </p>
         <div className="space-x-6">
           <button
             onClick={() => setTab("Products")}
-            className={`${tab === "Products" ? "bg-linear-to-r from-[#4F39F6] to-[#9514FA] btn text-white rounded-3xl" : ""}`}
+            className={`btn rounded-3xl ${tab === "Products" ? "bg-linear-to-r from-[#4F39F6] to-[#9514FA] btn text-white rounded-3xl" : ""}`}
           >
             Products
           </button>
 
           <button
             onClick={() => setTab("Card")}
-            className={`${tab === "Card" ? "bg-linear-to-r from-[#4F39F6] to-[#9514FA] btn text-white rounded-3xl" : ""}`}
+            className={`btn rounded-3xl ${tab === "Card" ? "bg-linear-to-r from-[#4F39F6] to-[#9514FA] btn text-white rounded-3xl" : ""}`}
           >
             Cart({choose.length})
           </button>

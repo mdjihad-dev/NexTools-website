@@ -12,7 +12,7 @@ const PricingCard = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
           {/* Card 1 */}
           <div className="card w-96 bg-base-100 shadow-2xl hover:bg-linear-to-r from-[#4F39F6] to-[#9514FA] hover:text-white">
             <div className="card-body">
