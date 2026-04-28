@@ -1,16 +1,39 @@
-# React + Vite
+step-1
+# NextTools-website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+NextTools-website is a modern and responsive web application designed to help users discover premium tools and services. It focuses on a clean user interface and efficient performance, utilizing the latest frontend technologies to provide a seamless user experience.
 
-Currently, two official plugins are available:
+## Live Demo
+[View Live Project Here](nex-tools-website.vercel.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+step-2
+## Key Features
+- Dynamic Grid Layout: Ensures all tool cards are perfectly aligned with consistent dimensions regardless of content size.
+- Conditional Rendering: Implements a smart tab-switching system to toggle between available and selected views.
+- Fully Responsive Design: Optimized for all screen sizes, including mobile, tablet, and desktop devices.
+- Efficient Data Handling: Uses Axios for fetching and managing external JSON data accurately.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Technologies Used
+- Frontend Framework: React.js (Vite)
+- Styling: Tailwind CSS and DaisyUI
+- Data Fetching: Axios
+- State Management: React Hooks (useState, useEffect)
+- Deployment: Vercel / Netlify
 
-## Expanding the ESLint configuration
+## Installation and Local Setup
+1. Clone the repository:
+   git clone https://github.com/mdjihad-dev/NextTools-website.git
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+2. Navigate to the project directory:
+   cd NextTools-website
+
+3. Install dependencies:
+   npm install
+
+4. Start the development server:
+   npm run dev
+
+---
+Developed by: Jahidul Islam (mdjihad-dev)
